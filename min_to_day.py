@@ -21,3 +21,10 @@ def validate_and_execute():
     else:
         print("your input is not a valid number, please enter a valid number")
 
+
+#for the calcution to run continuously until user types "exit"
+user_input = ""
+while user_input != "exit":
+    user_input = input("pls add the number of days to convert to mins \n")
+    validate_and_execute()
+
