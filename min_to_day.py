@@ -12,3 +12,12 @@ def calc_of_mins(num_of_days):
     else:
         return "you entered an invalid number of days, please confirm your entry"
 
+#for the input to be only numbers (int) and not strings or number less than zero
+def validate_and_execute():
+    if user_input.isdigit():
+        user_input_number = int(user_input)
+        total_min = calc_of_mins(user_input_number)
+        print(total_min)
+    else:
+        print("your input is not a valid number, please enter a valid number")
+
